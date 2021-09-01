@@ -82,8 +82,8 @@ async def megadl(bot, message):
         await download_msg.edit(f"**Downloaded Successfully 😉!**")
         await trace_msg.edit(f"#MegaDL: Download Done! \n\n{user_info}")
     except Exception as e:
-        await download_msg.edit(f"**Error:** `{e}`")
-        await trace_msg.edit(f"#MegaDL: Download Failed! \nReason: `{e}` \n\n{user_info}")
+        #await download_msg.edit(f"**Error:** `{e}`")
+        #await trace_msg.edit(f"#MegaDL: Download Failed! \nReason: `{e}` \n\n{user_info}")
         shutil.rmtree(basedir + "/" + userpath)
         return
     lmaocheckdis = os.stat(alreadylol).st_size
